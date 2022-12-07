@@ -24,7 +24,7 @@ class SignupController extends AbstractController
 
       try {
         TweeterAuthentification::register($username,$password,$name);
-        Router::executeRoute('home');
+        Router::executeRoute('login');
       }
       catch (InvalidArgumentException $e){
         Router::executeRoute('add_user');

@@ -16,17 +16,20 @@ class FollowingController extends AbstractController
     $followees = Follow::where('follower','=', TweeterAuthentification::connectedUser())->get();
     $name_followees=[];
 
+    $liste_tweets = [];
+
     foreach ($followers as $follower) {
-      $follower->follower = \iutnc\tweeterapp\model\User::select()->where('id', '=', $follower->follower)->get();
-      $name_followers[]=array("id"=>$follower->follower[0]->id,"username"=>$follower->follower[0]->username);
+      $follower->follower = \iutnc\tweeterapp\model\User::select()->where('id', '=', $follower->follower)->first();
+      $name_followers[]=array("id"=>$follower->follower->id,"username"=>$follower->follower->username);
     }
 
     foreach ($followees as $followee) {
-      $followee->followee = \iutnc\tweeterapp\model\User::select()->where('id', '=', $followee->followee)->get();
-      $name_followees[]=array("id"=>$followee->followee[0]->id,"username"=>$followee->followee[0]->username);
+      $followee->followee = \iutnc\tweeterapp\model\User::select()->where('id', '=', $followee->followee)->first();
+      $name_followees[]=array("id"=>$followee->followee->id,"username"=>$followee->followee->username);
+      $liste_tweets []=$followee->followee->tweets()->get();
     }
 
-    $list_follows=[$name_followers,$name_followees];
+    $list_follows=[$name_followers,$name_followees,$liste_tweets];
 
     $viewFollowing=new \iutnc\tweeterapp\view\FollowingView($list_follows);
     $viewFollowing->makePage();
