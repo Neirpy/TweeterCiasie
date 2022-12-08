@@ -6,12 +6,13 @@
 2. cd TweeterCiasie
 3. composer install
 
-Si composer n'est pas installé, ce lien : https://getcomposer.org/download/
+Si composer n'est pas installé, ce lien : 
+* [Composer] (https://getcomposer.org/download/)
 
 ## Utilisateur test :
 
-username : cyp
-mdp: cyprien
+$username : cyp
+$mdp: cyprien
 
 ## Lien du projet :
 
