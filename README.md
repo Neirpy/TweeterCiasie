@@ -13,9 +13,9 @@ Si composer n'est pas installé, ce lien :
 
 ## Utilisateur test :
 
-  >`username : cyp`
+  >username : cyp
 
-  >`mdp: cyprien`
+  >mdp: cyprien
 
 ## Lien du projet :
 
