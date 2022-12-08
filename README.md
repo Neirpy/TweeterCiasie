@@ -20,5 +20,5 @@ Si composer n'est pas installé, ce lien :
 ## Lien du projet :
 
 Lien du projet : https://webetu.iutnc.univ-lorraine.fr/~grunblat3u/Tweeter/index.php
-Page d'option : une fois connecté c'est la page following
 
+Page d'option : une fois connecté c'est la page following
