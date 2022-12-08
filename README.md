@@ -2,18 +2,21 @@
 
 ## Installation du projet :
 
-1. git clone https://github.com/Neirpy/TweeterCiasie.git
-2. cd TweeterCiasie
-3. composer install
+```
+$git clone https://github.com/Neirpy/TweeterCiasie.git
+$cd TweeterCiasie
+$composer install
+```
 
 Si composer n'est pas installé, ce lien : 
 * [Composer] (https://getcomposer.org/download/)
 
 ## Utilisateur test :
 
+```
 $username : cyp
 $mdp: cyprien
-
+```
 ## Lien du projet :
 
 Lien du projet : https://webetu.iutnc.univ-lorraine.fr/~grunblat3u/Tweeter/index.php
